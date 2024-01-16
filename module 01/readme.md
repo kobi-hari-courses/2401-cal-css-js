@@ -33,5 +33,5 @@
 - Multi purpose tags: `div`, `span`
 - Semantic tags: `header`, `nav`, `footer`, `section`
 - Table tags: `table`, `thead`, `tbody`, `tr`, `th`, `td` and more
-- 
+- Form Tags: `form`, `input`, `button`, `textarea`, `select`
 

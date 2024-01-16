@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun With Html 5</title>
+    <style>
+      img {
+        height: 20px;
+        display: block;
+      }
+      label {
+        display: block;
+        font-size: 12px;
+        color: rgb(88, 88, 88);
+      }
+      form {
+        border: 1px solid gray;
+        padding: 20px;
+        background-color: lightgray;
+      }
+
+      .special {
+        color: magenta;
+      }
+
+      .required::before {
+        content: '*';
+        color: red;
+      }
+
+      #forms-title {
+        text-decoration: pink underline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Things you can do with HTML</h1>
+    <h2>Headers, this is header level 2</h2>
+    <h3>Paragraphs with Images and Other Inlines</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <strong>Suspendisse</strong> suscipit, ligula sit amet rutrum tristique,
+      purus orci sagittis eros, id varius orci nisl non quam. Sed sollicitudin
+      sodales luctus. <em>Aliquam accumsan vehicula</em> lacus, in eleifend sem
+      vehicula id. Sed aliquet sit amet ligula in dignissim. Integer id semper
+      tellus. Suspendisse tortor nibh, volutpat a purus nec, auctor suscipit
+      lacus. Nulla a dui vel nibh tristique tempor eget eget odio.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      suscipit, <strong>ligula sit amet rutrum tristique</strong>, purus orci
+      sagittis eros, id varius orci nisl non quam.
+      <img src="./images/orange.jpeg" />
+      Sed sollicitudin sodales luctus. Aliquam accumsan vehicula lacus, in
+      eleifend sem vehicula id. Sed aliquet sit amet ligula in dignissim.
+      <span style="color: blue; text-decoration: red underline"
+        >Integer id semper tellus</span
+      >. Suspendisse tortor nibh, volutpat a purus nec, auctor suscipit lacus.
+      Nulla a dui vel nibh tristique tempor
+      <a href="../01-hello-web/index.html">...Go To Previous Example...</a> eget
+      eget odio.
+    </p>
+    <h3>Lists</h3>
+    <h4>Unordered list</h4>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ul>
+    <h4>Ordered list</h4>
+    <ol>
+      <li>First List Item</li>
+      <li>Second List Item</li>
+    </ol>
+    <h3>Custom Block Elements</h3>
+    <div>This is the first div</div>
+    <div>This is the second div</div>
+    <h3>Tables</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <th>In English</th>
+                <th>In Kg</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alon</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Yoni</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>Nadav</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Ofer</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>Naama</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Ronni</td>
+                <td>25</td>
+            </tr>            
+        </tbody>
+    </table>
+    <h3 id="forms-title">Forms</h3>
+    <form>
+        <div>
+            <label class="required special">First Name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label class="required">Last Name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label class="special">Age</label>
+            <input type="number">
+        </div>
+        <div>
+            <label style="color: teal">Is Married</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <label class="required">Eye Color</label>
+            <input type="color">
+        </div>
+        <div>
+            <label>Resume</label>
+            <input type="file">
+        </div>
+        <div>
+            <label>Happiness</label>
+            <input type="range">
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea>Did nothing so far</textarea>
+        </div>
+        <div>
+            <label>Nationality</label>
+            <select>
+                <option>Israeli</option>
+                <option>American</option>
+                <option>French</option>
+            </select>
+        </div>
+        
+    </form>
+  </body>
+
+</html>
