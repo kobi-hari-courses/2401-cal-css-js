@@ -2,6 +2,7 @@
 
 ## Daily Summaries
 * [Module 01 - Introduction to web tech](./module%2001/readme.md)
+* [Module 02 - CSS Selectors](./module%2002/readme.md)
 
 ## Exercises
 * [Exercise 01 - Practice HTML](./module%2001/exercises/readme.md)

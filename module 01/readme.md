@@ -1,5 +1,12 @@
 # Module 01 - Introduction Web Technologies
 
+## Projects
+|     |     |
+| --- | --- |
+| [hello-web](./projects/01-hello-web/) | Introduction to Web Technologies | 
+| [fun-with-html](./projects/02-fun-with-html/) | The Basics of HTML | 
+
+
 ## Understanding the web
 - We talked about the `web` and its protocols
     - The `IP` protocol which allows any 2 computers to connect and communicate
