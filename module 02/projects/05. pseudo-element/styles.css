@@ -1,0 +1,58 @@
+p::first-letter {
+    font-size: 3em;
+    color: purple;
+}
+
+p::first-line {
+    text-decoration: red underline;
+}
+
+p::selection {
+    color: pink;
+    background-color: lightgoldenrodyellow;
+}
+
+li::marker {
+    content: '@ ';
+    color: red;
+}
+
+.special {
+
+}
+
+.special::before {
+    content: '[[[';
+    color: magenta;
+}
+
+.special::after {
+    content: attr(hint);
+    color: magenta;
+}
+
+[explain] {
+    background-color: rgba(255, 255, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+}
+
+[explain]:hover::before {
+    content: attr(explain);
+    border: 2px solid brown;
+    background-color: yellow;
+    position: absolute;
+    top: -1em;
+    left: -10px;
+}
+
+a[href$=".pdf"]::after {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 5px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
