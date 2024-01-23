@@ -1,0 +1,40 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* selects by existance of attribute */
+[bla] {
+    border: 1px solid red;
+}
+
+/* selects by value of attribute */
+[type="text"] {
+    background-color: pink;
+}
+
+/* selects attirbutes that contain string */
+[hint*="please"] {
+    border-right: 10px solid green;
+}
+
+/* selects attributes that start with string */
+[hint^="please"] {
+    border-left: 10px solid lime;
+}
+
+/* selects attributes that end with string */
+[hint$="please"] {
+    border-left: 10px solid magenta;
+}
+
+/* selects attributes that contain value in space seperated list */
+[conditions~="required"]::before {
+    content: '*';
+    color: red;
+}
+
+[currency="usd"]::after {
+    content: '$';
+    color: blue;
+}
+

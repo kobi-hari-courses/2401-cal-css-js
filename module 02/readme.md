@@ -22,6 +22,8 @@
 * Equality to value
 
 ## CSS Combinators
+* **And** Combinator
+* **Or** Combinator
 * **Descendant** Combinator
 * **Child** Combinator
 * **Adjacent** Combinator
