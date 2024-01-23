@@ -6,6 +6,8 @@
 
 ## Exercises
 * [Exercise 01 - Practice HTML](./module%2001/exercises/readme.md)
+* [Exercise 02 - Selectors]()
 
 ## Extra Material
 * [Learn HTML in W3Schools](https://www.w3schools.com/html/default.asp)
+* [CSS Diner - Selectors Game](https://flukeout.github.io/)
