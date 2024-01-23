@@ -1,0 +1,13 @@
+/* id selector */
+/* 1,0,0 */
+
+/* class selector */
+/* attribute selector */
+/* 0,1,0 */
+
+/* type selector */
+/* 0,0,1 */
+
+a .x input[type] {
+    
+}
