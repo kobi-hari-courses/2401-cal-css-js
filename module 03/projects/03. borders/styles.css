@@ -13,3 +13,47 @@
         20px 20px 10px 0px rgba(255, 0, 0, 0.2), 
         -20px -20px 10px 0px rgba(0, 0, 255, 0.2);
 }
+
+.border-image {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 30px solid;
+    border-image-source: url(border.png);
+    border-image-slice: 30;
+    border-image-repeat: round;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 50px solid transparent;
+    border-top-color: navy;
+    border-bottom-width: 0px;
+}
+
+.radius {
+    width: 50px;
+    height: 50px;
+    border: 10px solid brown;
+    border-radius: 35px;
+    border-top-color: transparent; 
+    animation: kobi 1s ease-in-out infinite;   
+}
+
+@keyframes kobi {
+    0% {
+        transform: rotate(0deg);
+        border-width: 10px;
+        
+    }
+    50% {
+        border-width: 20px;
+        border-color: white;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-width: 10px;
+    }
+}
