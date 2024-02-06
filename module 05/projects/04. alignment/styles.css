@@ -13,3 +13,38 @@ body {
     display: grid;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(2, 200px);
+
+    justify-content: center;
+    align-content: center;
+
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(223, 235, 245);
+}
+
+.grid-item:nth-child(2) {
+    background-color: lime;
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(5) {
+    background-color: pink;
+    justify-self: start;
+    align-self: start;
+}
+
