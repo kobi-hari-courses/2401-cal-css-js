@@ -6,6 +6,7 @@
 * [Module 03 - Box Model](./module%2003/README.md)
 * [Module 04 - Flex](./module%2004/README.md)
 * [Module 05 - Grid](./module%2005/README.md)
+* [Module 06 - Sizing and Positions](./module%2006/README.md)
 
 ## Exercises
 * [Exercise 01 - Practice HTML](./module%2001/exercises/readme.md)
