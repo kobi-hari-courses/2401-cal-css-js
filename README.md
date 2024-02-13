@@ -7,6 +7,7 @@
 * [Module 04 - Flex](./module%2004/README.md)
 * [Module 05 - Grid](./module%2005/README.md)
 * [Module 06 - Sizing and Positions](./module%2006/README.md)
+* [Module 07 - calc and Custom properties](./module%2007/README.md)
 
 ## Exercises
 * [Exercise 01 - Practice HTML](./module%2001/exercises/readme.md)
@@ -14,6 +15,9 @@
 * [Exercise 03 - Box Model](./module%2003/exercises/README.md)
 * [Exercise 04 - Flex](./module%2004/exercises/README.md)
 * [Exercise 05 - Grid](./module%2005/exercises/README.md)
+* [Exercise 06 - Positions](./module%2006/exercises/README.md)
+* [Exercise 07 - Custom Properties](./module%2007/exercises/)
+
 
 ## Extra Material
 * [Learn HTML in W3Schools](https://www.w3schools.com/html/default.asp)
