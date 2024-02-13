@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 6.1</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card.first {
+        --primary: red;
+      }
+
+      .card.second {
+        --primary: green;
+      }
+
+      .card.third {
+        --primary: blue;
+      }
+
+      /* start solution here: */
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card {
+        --primary-dark-1: color-mix(in srgb, var(--primary) 80%, black);
+        --primary-dark-2: color-mix(in srgb, var(--primary) 60%, black);
+        --primary-dark-3: color-mix(in srgb, var(--primary) 40%, black);
+        --primary-dark-4: color-mix(in srgb, var(--primary) 20%, black);
+        --primary-light-1: color-mix(in srgb, var(--primary) 80%, white);
+        --primary-light-2: color-mix(in srgb, var(--primary) 60%, white);
+        --primary-light-3: color-mix(in srgb, var(--primary) 40%, white);
+        --primary-light-4: color-mix(in srgb, var(--primary) 20%, white);
+        --primary-light-5: color-mix(in srgb, var(--primary) 10%, white);
+        --primary-transparent-1: color-mix(in srgb, var(--primary) 80%, transparent);
+        --primary-transparent-2: color-mix(in srgb, var(--primary) 60%, transparent);
+        --primary-transparent-3: color-mix(in srgb, var(--primary) 40%, transparent);
+        --primary-transparent-4: color-mix(in srgb, var(--primary) 20%, transparent);
+
+
+        min-height: 150px;
+        max-width: 20em;
+
+        margin: 10px;
+        border: 1px solid var(--primary-dark-2);
+        background-color: var(--primary-light-5);
+        overflow: hidden;
+        box-shadow: 4px 4px 4px var(--primary-transparent-3);
+      }
+
+      .card-title {
+        font-size: 1.3em;
+        background-color: var(--primary-dark-2);
+        padding: 4px 8px;
+        border-bottom: 1px solid var(--primary-light-2);
+        color: var(--primary-light-4);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 1px 4px var(--primary-transparent-3);
+      }
+
+      .card-content {
+        flex-grow: 1;
+        font-size: 0.8em;
+        font-family: consolas;
+        padding: 12px;
+        color: var(--primary-dark-2);
+      }
+
+      .card-actions {
+        background-color: white;
+        padding: 4px;
+        border-top: 1px solid var(--primary-light-2);
+        box-shadow: 0px -1px 4px var(--primary-transparent-3);
+      }
+
+      .card-actions button {
+        border: 1px solid var(--primary);
+        background-color: var(--primary-light-5);
+        padding: 4px;
+        border-radius: 2px;
+        color: var(--primary);
+      }
+
+      .card-actions button:hover {
+        background-color: var(--primary-dark-3);
+        color: var(--primary-light-2);
+      }
+
+</style>
+  </head>
+  <body>
+    <div class="card first">
+      <div class="card-title">This is the header</div>
+      <div class="card-content">This is the content</div>
+      <div class="card-actions">
+        <button>Ok</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+    <div class="card second">
+      <div class="card-title">This is the header</div>
+      <div class="card-content">This is the content</div>
+      <div class="card-actions">
+        <button>Ok</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+    <div class="card third">
+        <div class="card-title">This is the header</div>
+        <div class="card-content">This is the content</div>
+        <div class="card-actions">
+          <button>Ok</button>
+          <button>Cancel</button>
+        </div>
+      </div>
+    </body>
+</html>
