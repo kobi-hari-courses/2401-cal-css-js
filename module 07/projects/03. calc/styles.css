@@ -1,0 +1,35 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    padding: 50px;
+    --my-hue: 300;
+    --pure: hsl(var(--my-hue), 100%, 50%);
+    --pale: hsl(var(--my-hue), 50%, 80%);
+    --dark: hsl(var(--my-hue), 100%, 20%);
+    --contrast: hsl(calc(var(--my-hue) + 180), 100%, 50%);
+}
+
+div {
+    border: 4px solid var(--contrast);
+    width: 100px;
+    height: 100px;
+    background-color: var(--pale);
+    color: var(--dark);
+    --shadow-offset: 4px;
+
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 10px 0px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+div:hover {
+    --shadow-offset: 10px;
+}
