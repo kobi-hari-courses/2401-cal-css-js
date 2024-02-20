@@ -29,4 +29,6 @@
 
 * [CSS Tricks](https://css-tricks.com/)
     * [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-    
+    * [CSS Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+    * [CSS Color](https://css-tricks.com/nerds-guide-color-web/)
+    * [CSS Functions](https://css-tricks.com/complete-guide-to-css-functions/)
