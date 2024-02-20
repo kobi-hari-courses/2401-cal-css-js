@@ -1,12 +1,36 @@
-# Module 7 - Variables and Tricks
-## Object fit
-* The `object-fit` property
-  * The `cover` value
-  * The `container` value
-  * The `scale-down` value
-  * The `fill` value
-  * The `none` value
-* The `object-position` property
+# Module 7 - Custom Properties and Advanced Graphics
+## The Color model
+We understood the various ways to define a color in CSS
+1. There is a list of around 200 **named colors**. 
+```css
+{
+    background-color: green;
+    color: lightblue;
+}
+```
+2. Each color is built from 3 components: Red, Green and Blue (RGB). Each component can have an intensity between 0 (off) and 255 (fully on). So there are 256 possible values for each component. Together there are 256 * 256 * 256 =~ 16M colors. You can define one specific color using the `rgb` function as follows: 
+```css
+    background-color: rgb(128, 64, 23);
+```
+3. You can add an **alpha channel** which describes transperancy (actually, it's the opposite, it describes how un-transparent, or opaque, the color is). The value is between 0 and 1 where 0 is transparent and 1 is fully opaque.
+```css
+    background-color: rgba(128, 64, 23, 0.3);
+```
+4. You can describe RGB values in an additional syntax - the **HEX** syntax, as follows:
+```css
+    background-color: #FF7F30 // similar to rgb(255, 127, 48);
+    color: #F26 // similar to #FF2266 which is like rgb(255, 34, 102);
+    border-color: #FFA0407F // the last 2 digits are for alpha, similar to rgba(255, 160, 64, 0.5)
+```
+5. A more "Human intuitive" way is to use HSL which stands from **Hue, Saturation, Lightness**. Hue is a number between 0 and 360 that describes a color on the ranbow circle (0 = pure red, 120 = pure green, 240 = pure blue. Between them: 60 = yellow, 180 = cyan and 300 = magenta). Saturation describes how far the color from grayscale, so 0% saturation is actually gray and 100% saturation means very pure color. Lightness describes how not-dark the color is. So 0% is black, and 100% is as bright as possible. 
+```css
+    background-color: hsl(120, 100%, 50%); // the pure green
+```
+6. You can also use `hsla` which adds the alpha channel.
+7. In new browsers, you can create a new color by mixing 2 original colors, as follows: 
+```css
+    background-color: color-mix(in srgb, red 50%, black); // will create dark red
+```
 
 ## CSS Custom Properties 
  * Understanding Custom properties
@@ -95,6 +119,15 @@
 * You can attach property values using the `attr([name])` function - only as text, and only in the content property
 * You can use the `counter-reset`, `counter-increment` and `counter` properties to add counters
 
+## Object fit
+* The `object-fit` property
+  * The `cover` value
+  * The `container` value
+  * The `scale-down` value
+  * The `fill` value
+  * The `none` value
+* The `object-position` property
+
 ## Gradient Backgrounds
 * The `background-image` property
 * Using `linear-gradient` to create an "image" on the fly
@@ -102,6 +135,57 @@
 * Defining gradient stops
 * Setting the background size and position
 * The `background-clip` property (Surprise!!!)
+
+## Transformations and Transitions
+* We saw how to use transformations with the 4 possible transforms
+  * `translate`
+  * `scale`
+  * `rotate`
+  * `skew`
+* We saw how to define the transform origin using `transform-origin`
+* We saw how to combine transformation and understood that becuase transforms do not yield layout recalculations, they are super fast
+* We can use the `transition` property to define that changes in state occur through a period of time
+* We saw that the `transition` property can accept an easing function such as:
+  * `linear` - no easing
+  * `ease-in` - start fast and slow down towards the end
+  * `ease-out` - start alow and accelrate 
+  * `ease-in-out` - start slow, accelarate, and then slow down towards the end
+  * `cubic-bezeir()` - a function that can create any easing function using 4 numbers
+* We saw that we can provide different transition settings to each property:
+
+```css
+    transition: background-color 2s ease-in, margin 4s ease-in-out, transform 1s linear;
+```
+
+* we saw that in order to animate a custom property we need to:
+  * Define a `@property` rule that sets its exact type (otherwise custom properties can accept any value and can therefore not be animated)
+  * Define a specific setting in the `transition` property. 
+
+## Animations
+* We can define reusable storyboards using the `@keyframe` rules.
+* We provide a name for the storyboard, and then define the various states
+```css
+@keyframe my-animation {
+    0% {
+        background-color: red;
+        transform: scale(1);
+    }
+    50% {
+        background-color: green;
+        transform: scale(1.5);
+    }
+    100% {
+        background-color: blue;
+        transform: scale(0.5);
+    }
+}
+```
+* We can then use the animation on an element using the various animation properties
+  * `animation-name` chooses the animation keyframes
+  * `animation-duration` defines the length of the animation
+  * `animation-iteration-count` how many times to run the animation (possibly infinite)
+  * `animation-delay` how much time to wait before the animation starts. 
+* and more...
 
 
 ## Extra Links

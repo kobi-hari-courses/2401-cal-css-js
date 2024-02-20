@@ -7,7 +7,7 @@
 * [Module 04 - Flex](./module%2004/README.md)
 * [Module 05 - Grid](./module%2005/README.md)
 * [Module 06 - Sizing and Positions](./module%2006/README.md)
-* [Module 07 - calc and Custom properties](./module%2007/README.md)
+* [Module 07 - Custom Properties and Advanced Graphics](./module%2007/README.md)
 
 ## Exercises
 * [Exercise 01 - Practice HTML](./module%2001/exercises/readme.md)
