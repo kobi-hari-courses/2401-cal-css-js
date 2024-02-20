@@ -1,5 +1,46 @@
 # Module 08 - Javascript and the DOM
 
+## Getting Started with JS and DOM
+* We talked a bit about the history of Javascript and the role it serves
+* We can use Javascript in our code by using the `<script>` tag
+    * We can place it in the `<head>` section or the `<body>` section, which affects when it is executed
+    * We can place javascript code directily inside it, or (better) use the `src` attribute to point to another file: `<script src="./my-file.js">`
+* In the javascript, we can write lines of code that will be executed as soon as the file is loaded.
+* It is more recommened to place the code in functions, and call them when something happens.
+* The DOM defines **events** - which are attributes that contain code that is automatically executed when something happens.
+
+```javascript
+function doThisOnClick() {
+    console.log('Did something');
+}
+```
+```html
+<h1 onclick="doThisOnClick()">
+Title
+</h1>
+```
+
+* In our javascript we can use the `document.getElementById` function to find an `HTMLElement` object and do something with it
+
+```html
+<h1 id="my-header">The Title</h1>
+```
+
+```javascript
+function findTheElement() {
+    var x = document.getElementById('my-header');
+    if (x !== null) {
+        // do something with x
+    }
+}
+```
+* There are many DOM manipulations that we can do when we hold a reference to an `HTMLElement`
+    * We can set a style property: ``` x.style.background="green";```
+    * We can modify the inner text: ``` x.innerText = "A whole new text";```
+    * We can modify the class name: ``` x.className = "some-class";```
+
+* We saw that by combining Javascript DOM manipulation and CSS we can achieve many interesting results
+
 ## Introduction to JS
 * Data types in Javascript
 * Variables in Javascript
@@ -33,12 +74,6 @@
     * Understanding the event overload
     * How to add and remove event handlers to the DOM
 
-## Advanced Javascript
-* Understanding the `new` keyword
-* Understanding the object prototype
-* Understanding the `this` keyword
-* Function scope - When the `this` keyword is lost
-* Function functions: `apply`, `call`, `bind`
 
 
 
