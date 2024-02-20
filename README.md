@@ -18,6 +18,7 @@
 * [Exercise 05 - Grid](./module%2005/exercises/README.md)
 * [Exercise 06 - Positions](./module%2006/exercises/README.md)
 * [Exercise 07 - Custom Properties](./module%2007/exercises/)
+* [Exercise 08 - Justscript and DOM](./module%2008/exercises/README.md)
 
 
 ## Extra Material
