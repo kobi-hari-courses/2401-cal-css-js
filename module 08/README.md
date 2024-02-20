@@ -42,11 +42,124 @@ function findTheElement() {
 * We saw that by combining Javascript DOM manipulation and CSS we can achieve many interesting results
 
 ## Introduction to JS
-* Data types in Javascript
-* Variables in Javascript
-* Arrays and Objects
-* Functions
-* Conditions in Javascript
+### Data types in Javascript
+There are 6 data types in javascript. These are types of values - not variables. 
+
+1. boolean - The values `true` and `false`.
+2. number - All the numbers, including integers, floats, and some special numbers like `NaN`, `Infinity`
+3. string - all textual values. You can use 3 different types of quotations: single quote (') , double quote (") and for special strings: back tick (`)
+4. objects - a collection of key-value pairs
+    - You can create an empty one like this ```var x = {}``` or ```var x = new Object()```
+    - You can create a full one like this ```var x = {a: 2, b: 4}```
+    - The keys must be strings or numbers and are treated as strings anyway
+    - The values can be any legal javascript value
+    - Arrays are also objects: 
+```javascript
+    var x = {0: 'Hello', 1: 'Hi'};
+    var y = ['Hello', 'Hi']; 
+    // essentialy the same, but the array has some additional methods - as we will see later on
+```
+    - You can access a property in two ways:
+```javascript
+    var x = {a: 40, b: 30};
+    var y = x.a;
+    var z = x['a']; // the same
+    x.a = 50;
+    x['a'] = 50; // the same
+```
+    - You can get a list of all keys in an object:
+```javascript
+    var x = {a: 50, b: 60};
+    var props = Object.keys(x); // props == ['a', 'b'];
+```
+
+    - You can get a list of key-value pairs in an object:
+```javascript
+    var x = {a: 50, b: 60};
+    var props = Object.entries(x); // props == [['a', 50], ['b', 60]];
+```
+5. Functions
+You can create reusable pieces of code by creating functions.
+
+```javascript
+function doSomething() {
+    console.log('We are doing something');
+}
+
+doSomething();  // called the function
+```
+- You can define parameters, and then pass them to the function
+```javascript
+function addAndPrint(num) {
+    var txt = `${num} + 5 = ${num + 5}`;
+    console.log(txt);
+}
+
+addAndPrint(10);
+addAndPrint(20);
+```
+
+* Functions can return values
+```javascript
+function double(num) {
+    return num * 2;
+}
+
+var x = double(10); // x == 20
+
+```
+
+6. undefined - this type contains only the value `undefined`. It is the default value of everything that was not initialized.
+
+```javascript
+var x; // x == undefined
+console.log(z); // will print undefined
+
+```
+
+### Variables in javascript
+Variables are places in memory that holds values. In javascript, you define a variable using the `var` keyword, and then it can store any legal value in javascript: boolean, number, string, object, function or undefined;
+
+```javascript
+var x;  // initialized to undefined
+var y = 40; // y is a variable that holds a number
+```
+
+#### Variables do not have type
+Variables can hold **any** value, and you can use the same variable to store different value types. A variable that stores a number, can later be assigned a string, or even a full object.
+
+```javascript
+var x = 10;
+x = 'Hello';
+x = {a: 20, b: 'Hello'}
+```
+
+#### Reference and Value types
+The 6 types of javascript are divided into two groups: value types, and reference types.
+
+> boolean, number, string, and undefined are **value types**
+> object, function are **reference types**
+
+When you assign value from one variable to another:
+- If it is a value type, the value is copied - duplicated
+- If it is a reference type, the two variables point to the same object.
+
+```javascript
+var x = 10;
+var y = x; // y is also 10, but it is a different 10. These are two different instances of 10.
+
+x++; // x is now 11, y is still 10.
+```
+
+``` javascript
+var x = {a: 20};
+var y = x;  // there is only one object in memory with a: 20. both x and y point to the same object.
+
+x.a = 30;   // y.a is also 30, because they both point to the same object, which has changed
+
+```
+
+
 * Loops in Javascript
 
 ## Introduction to the DOM
