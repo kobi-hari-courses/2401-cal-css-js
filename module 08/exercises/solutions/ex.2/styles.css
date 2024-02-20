@@ -19,6 +19,14 @@ h1.yellow {
     background-color: lightgoldenrodyellow;
 }
 
+h1.brown {
+    background-color: lightsalmon;
+}
+
+h1.purple {
+    background-color: rgb(254, 235, 254);
+}
+
 li {
     border: 1px solid gray;
     list-style: none;
@@ -36,12 +44,16 @@ li:hover {
 li.red {
     color: red;
 }
-
 li.green {
     color: green;
 }li.blue {
     color: blue;
 }li.yellow {
     color: yellowgreen;
+}
+li.brown {
+    color: brown;
+}li.purple {
+    color: purple;
 }
 
