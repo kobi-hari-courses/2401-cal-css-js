@@ -202,6 +202,13 @@ a.unshift(0); // a = [0, 1, 2, 3]
     var x = a.splice(2, 2, 10, 20); // a == [1, 2, 10, 20, 5], x == [3, 4]
 ```
 
+* The `reverse` method, reverses the array
+
+```javascript
+    var a = [1, 2, 3];
+    a.reverse(); // [3, 2, 1]
+```
+
 ### Looping over arrays
 You can use the `for` loops to generate and modify an index. Instead, you can use the `for-of` to loop over items of an array
 

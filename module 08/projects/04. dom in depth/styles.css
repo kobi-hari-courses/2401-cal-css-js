@@ -1,0 +1,15 @@
+h1 {
+    background: lightblue;
+}
+
+h1.kobi {
+    background: lime;
+}
+
+li {
+    list-style-image: url('./images/square.svg');
+}
+
+li.checked {
+    list-style-image: url('./images/checked.svg');
+}

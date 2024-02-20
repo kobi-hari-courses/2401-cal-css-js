@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fun with Javascript</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1
+      id="main-header"
+      onmouseenter="onTitleEnter()"
+      onmouseleave="onTitleLeave()"
+      onclick="onTitleClicked()"
+    >
+      Hello World
+    </h1>
+
+    <h2>Shopping List</h2>
+    <input id="new-item-input" type="text">
+    <button onclick="addItemToShoppingList()">Add</button>
+    <ul id="shopping-list">
+      <li onclick="checkLi(event.target)">Milk</li>
+      <li onclick="checkLi(event.target)">Tomatos</li>
+      <li onclick="checkLi(event.target)">Chocolate</li>
+    </ul>
+  </body>
+</html>
