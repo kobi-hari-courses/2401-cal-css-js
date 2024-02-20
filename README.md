@@ -21,7 +21,12 @@
 
 ## Extra Material
 * [Learn HTML in W3Schools](https://www.w3schools.com/html/default.asp)
+
+* CSS Games
+    * [CSS Diner - Selectors Game](https://flukeout.github.io/)
+    * [CSS Flex Froggy - Flex Game](https://flexboxfroggy.com/)
+    * [CSS Grid Garden - Grid Game](https://cssgridgarden.com/)
+
 * [CSS Tricks](https://css-tricks.com/)
-* [CSS Diner - Selectors Game](https://flukeout.github.io/)
-* [CSS Flex Froggy - Flex Game](https://flexboxfroggy.com/)
-* [CSS Grid Garden - Grid Game](https://cssgridgarden.com/)
+    * [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    
