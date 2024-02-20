@@ -220,7 +220,7 @@ for(var x of a) {
 ```
 
 
-## Introduction to the DOM
+## Deep dive to the DOM
 * What is the DOM
 * Selecting Elements with Javascript
     * `document.getElementsById()`
@@ -235,15 +235,23 @@ for(var x of a) {
         * Can be called on a single element or on the entire document
     * `document.querySelectorAll()` returns a list of elements that match the criteria
 * Modifying the DOM
-    * Changing element text
-    * Changing element inner HTML
-    * Modifying element style
-    * Modifying element class list
+    * Changing element text: `elem.innerText = 'new text'`
+    * Changing element inner HTML: `elem.innerHTML = '<h1>WOW</h1>'`
+    * Modifying element style: `elem.style.backgroundColor = 'green'`
+    * Modifying element class: `elem.className = 'checked'`
 
 * Event Handling
-    * Understanding events
-    * Understanding the event overload
-    * How to add and remove event handlers to the DOM
+We can dynamically add and remove event handlers from a DOM element using the `addEventListener` and `removeEventListener` functions.
+
+To add an event listener, supply the name of the event, and the callback function. The callback function can receive a single parameter, the browser will use this parameter to give you the event payload.
+
+```javascript
+element.addEventListener('click', function(event) {
+    event.target.style.backgroundColor = 'lime';
+})
+```
+
+
 
 
 
